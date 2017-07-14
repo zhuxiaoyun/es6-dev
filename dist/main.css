@@ -1,0 +1,28 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.active {
+  background: red;
+}
+.B_Label {
+  border: 1px solid #ddd;
+  padding: 2px 8px 2px 5px;
+  user-select: none;
+  margin-right: 5px;
+  position: relative;
+}
+.B_Label .B_Button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 1px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  display: none;
+}
+.B_Label:hover .B_Button {
+  display: block;
+}
