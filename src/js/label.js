@@ -9,10 +9,10 @@ const Label = function(options) {
   this.container.appendChild(this.el);
 
   const button = new Button({
-    text: 'x'
+    text: 'x',
+    spanEl: this.el
   });
   this.el.appendChild(button.createEl());
-  console.log(button);
 }
 
 Label.prototype.createEl = function() {

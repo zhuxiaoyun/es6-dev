@@ -71,25 +71,25 @@
 // function 关键字
 
 // 写一个Button组件,拥有disable(不能被点击) active(亮色)enable()三个方法
-// class Button {
-//   constructor(option) {
-//     this.option = Object.assign({}, this.option, option);
-//   }
-// }
-// Button.prototype.option = {
-//   id: '',
-//   disabled: false,
-// }
-// Button.prototype.active = function() {
-//   this.option.class = 'active';
-// }
-// Button.prototype.disable = function() {
-//   this.option.disabled = true;
-// }
-// Button.prototype.enable = function() {
-//   this.option.disabled = false;
-// }
-// var button = new Button({id: 'container'});
-// button.disable();
+class Button {
+  constructor(option) {
+    this.option = Object.assign({}, this.option, option);
+  }
+}
+Button.prototype.option = {
+  id: '',
+  disabled: false,
+}
+Button.prototype.active = function() {
+  this.option.class = 'active';
+}
+Button.prototype.disable = function() {
+  this.option.disabled = true;
+}
+Button.prototype.enable = function() {
+  this.option.disabled = false;
+}
+var button = new Button({id: 'container'});
+button.disable();
 
 

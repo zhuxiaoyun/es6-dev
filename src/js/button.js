@@ -7,7 +7,6 @@ const Button = function(options) {
     this.container = document.getElementById(options.id);
     this.container.appendChild(this.el);
   }
-
 }
 
 Button.prototype.createEl = function() {
@@ -15,7 +14,8 @@ Button.prototype.createEl = function() {
   el.textContent = this.options.text || 'btn';
   el.className = CLASS_NAME;
   el.addEventListener('click', () => {
-    console.log('sss');
+    this.options.spanEl.remove();
+    // (this.options.spanEl).parentNode.removeChild(this.options.spanEl);
   });
   return el;
 }
