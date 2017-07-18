@@ -23,3 +23,16 @@ Label.prototype.createEl = function() {
 }
 
 export default Label;
+
+// class Label
+// {
+//   constructor()
+//   {
+
+//   }
+  
+//   createEl()
+//   {
+
+//   }
+// }
